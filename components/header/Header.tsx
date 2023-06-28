@@ -6,7 +6,7 @@ import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
 
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
-import { headerHeight } from "./constants.ts";
+import { headerHeight } from "deco-sites/sapuca/components/header/constants.ts";
 
 export interface NavItem {
   label: string;
@@ -58,7 +58,7 @@ function Header({
   return (
     <>
       <header style={{ height: headerHeight }}>
-        <div class="bg-base-100 fixed w-full z-50">
+        <div class="bg-base-100 fixed w-full z-50 bg-red-500">
           <Alert alerts={alerts} />
           <Navbar items={navItems} searchbar={searchbar} />
         </div>
